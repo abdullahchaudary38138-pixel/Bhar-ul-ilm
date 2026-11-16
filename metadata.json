@@ -1,0 +1,6 @@
+{
+  "name": "Bahr-ul-Ilm AI",
+  "description": "Multilingual voice-first Islamic research, understanding, smart corpus search, and claim verification platform supporting Roman Urdu, Urdu, Arabic, and English.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

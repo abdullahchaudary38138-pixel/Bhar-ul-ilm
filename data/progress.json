@@ -1,0 +1,37 @@
+{
+  "surahsStudied": [
+    1
+  ],
+  "ayatStudied": [
+    "1:1"
+  ],
+  "vocabularyCount": 4,
+  "grammarLessonsCompleted": [
+    "Ism, Fi'l, Harf Foundations"
+  ],
+  "tajweedPracticeCount": 6,
+  "mistakesLogged": 1,
+  "mistakesCorrected": 0,
+  "booksReadPages": [
+    {
+      "bookId": "book-rahiqum-makhtum",
+      "title": "Al-Rahiqum Makhtum (The Sealed Nectar)",
+      "lastPage": 1
+    },
+    {
+      "bookId": "book-siddiq-compilation",
+      "title": "Sirat al-Siddiq & Compilation of the Quran (Hazrat Abu Bakr RA)",
+      "lastPage": 1
+    }
+  ],
+  "revisionQueue": [
+    {
+      "id": "rev-fatiha-1",
+      "label": "Surah Al-Fatihah (1:1–7) — Word-by-word roots & Madd Arid lis-Sukoon",
+      "type": "Ayah",
+      "dueDate": "2026-11-15",
+      "completed": false
+    }
+  ],
+  "bookmarks": []
+}

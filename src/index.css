@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Noto Naskh Arabic", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Naskh Arabic", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Amiri", "Noto Naskh Arabic", serif;
+  --font-urdu: "Noto Naskh Arabic", "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  --font-urdu-nastaliq: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy: #060913;
+  --color-navy-surface: #0D1426;
+  --color-navy-elevated: #151F38;
+  --color-ink: #F8FAFC;
+  --color-ink-muted: #E2E8F0;
+  --color-ink-subtle: #94A3B8;
+  --color-border-hairline: rgba(148, 163, 184, 0.22);
+  --color-emerald: #10B981;
+  --color-emerald-deep: #047857;
+  --color-gold: #D4AF37;
+  --color-gold-soft: #F3D578;
+  --color-amber-warn: #F59E0B;
+  --color-crimson: #F87171;
+
+  --color-paper: #060913;
+  --color-paper-warm: #151F38;
+  --color-paper-card: #0D1426;
+  --color-forest: #10B981;
+  --color-forest-hover: #047857;
+  --color-bronze: #F59E0B;
+  --color-terracotta: #F87171;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-navy);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-navy);
+    background-image:
+      radial-gradient(circle at 14% 0%, rgba(16, 185, 129, 0.13) 0%, transparent 45%),
+      radial-gradient(circle at 88% 8%, rgba(212, 175, 55, 0.1) 0%, transparent 42%),
+      radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+  }
+
+  [lang="ur"],
+  .font-urdu {
+    font-family: var(--font-urdu);
+    font-weight: 600;
+    line-height: 2.15;
+    letter-spacing: 0;
+  }
+
+  h1[lang="ur"],
+  h2[lang="ur"],
+  h3[lang="ur"],
+  .font-urdu-heavy {
+    font-family: var(--font-urdu);
+    font-weight: 700;
+    line-height: 2.05;
+    letter-spacing: 0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+  font-weight: 700;
+  line-height: 2.2;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Modern Glass Elevated Card Styles */
+.modern-panel {
+  background: linear-gradient(160deg, rgba(16, 25, 46, 0.92), rgba(10, 16, 31, 0.96));
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow:
+    0 12px 32px -12px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.modern-card {
+  background: linear-gradient(155deg, rgba(20, 31, 56, 0.85), rgba(11, 18, 34, 0.94));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.55);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.modern-card:hover {
+  border-color: rgba(16, 185, 129, 0.48);
+  box-shadow: 0 14px 30px -12px rgba(16, 185, 129, 0.22);
+}
+
+/* Quran & Book Reading Surface Themes */
+.reading-navy {
+  background: linear-gradient(165deg, #0E172B 0%, #09101E 100%);
+  color: #F8FAFC;
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow: 0 16px 36px -14px rgba(0, 0, 0, 0.7);
+}
+
+.reading-light {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border-color: #CBD5E1;
+}
+
+.reading-parchment {
+  background-color: #FBF5E8;
+  color: #1C1917;
+  border-color: #D6C7AC;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
